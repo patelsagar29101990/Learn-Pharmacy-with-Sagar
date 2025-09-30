@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn Pharmacy with Sagar</title>
+  <title>Contact - Learn Pharmacy with Sagar</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,24 +23,20 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to Learn Pharmacy with Sagar</h1>
-    <p>Your go-to place for all pharmacy-related education and resources.</p>
-    <a href="blog.html" class="cta-button">Start Exploring</a>
-  </section>
+  <section class="contact-form">
+    <h1>Contact Us</h1>
+    <form action="submit_form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-  <section class="featured">
-    <h2>Featured Articles</h2>
-    <div class="article">
-      <h3>Pharmaceutical Tips for Beginners</h3>
-      <p>Learn some of the most effective tips for getting started in the pharmaceutical field.</p>
-      <a href="blog.html">Read More</a>
-    </div>
-    <div class="article">
-      <h3>Understanding Drug Interactions</h3>
-      <p>Understanding drug interactions is crucial in pharmacy practice. Here's everything you need to know.</p>
-      <a href="blog.html">Read More</a>
-    </div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
